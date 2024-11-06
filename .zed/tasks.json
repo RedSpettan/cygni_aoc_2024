@@ -1,0 +1,35 @@
+// Static tasks configuration.
+//
+// Example:
+[
+  {
+    "label": "build_aoc_image",
+    "command": "docker build  -t ${AOC_IMAGE} $ZED_DIRNAME",
+    "use_new_terminal": false,
+    "reveal": "always",
+    "hide": "never",
+    "shell": {
+      "program": "/bin/zsh"
+    }
+  },
+  {
+    "label": "run_aoc_part_1",
+    "command": "docker run -e part=part1 --rm ${AOC_IMAGE}",
+    "use_new_terminal": false,
+    "reveal": "always",
+    "hide": "never",
+    "shell": {
+      "program": "/bin/zsh"
+    }
+  },
+  {
+    "label": "run_aoc_part_2",
+    "command": "docker run -e part=part2 --rm ${AOC_IMAGE}",
+    "use_new_terminal": false,
+    "reveal": "always",
+    "hide": "never",
+    "shell": {
+      "program": "/bin/zsh"
+    }
+  }
+]
